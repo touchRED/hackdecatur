@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HackDecatur</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style type="text/css">
+            /* Set a size for our map container, the Google Map will take up 100% of this container */
+            #map {
+                width: 100%;
+                height: 250px;
+                padding-top:0;
+                margin-top:0;
+                border-radius:5px;
+            }
+        </style>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 17,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(33.774161, -84.293351), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{stylers:[{saturation:-100},{gamma:1}]},{elementType:"labels.text.stroke",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{visibility:"simplified"}]},{featureType:"water",stylers:[{visibility:"on"},{saturation:50},{gamma:0},{hue:"#50a5d1"}]},{featureType:"administrative.neighborhood",elementType:"labels.text.fill",stylers:[{color:"#333333"}]},{featureType:"road.local",elementType:"labels.text",stylers:[{weight:0.5},{color:"#333333"}]},{featureType:"transit.station",elementType:"labels.icon",stylers:[{gamma:1},{saturation:50}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+            }
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id = "hero">
+            <h1><a href = "/hackdecatur">HackDecatur</a></h1>
+            <h3><i>Let's hack a city</i></h3>
+        </div>
+        <p class = "binary">01100100 01100101 01100011 01100001 01110100 01110101 01110010</p>
+        <div id ="container">
+            <div id = "main">
+                <h2>The Intro</h2>
+                <p>HackDecatur is all about helping the City of Decatur through software. For one weekend, we'll all
+                come together to write code that benefits the entire city of Decatur, not just one business or cause.
+                </p>
+                <h2>The Issue</h2>
+                <p>Decatur has a thriving business scene, with new restaurants, stores, and clubs opening every other weak. All of 
+                    these businesses have problems they need solved. That's where you come in.
+                </p>
+                <h2>The Solution</h2>
+                <p>In the modern age, software can solve just about any problem that can be solved. Unfortunately, the true power
+                of code isn't realized by very many people. Outside of the technology industry, code literacy is scarce in many 
+                businesses. Due to the fact that software is used less commonly to solve problems, owners of large and small 
+                businesses alike face trivial issues that could be solved by simple web apps, mobile interfaces, or even simple databases
+                in the cloud.
+                </p>
+                <p>
+                At HackDecatur, we want to draw together talented technologists, designers, business owners, and idea people to
+                tackle the task of making Decatur's organizations more efficient. Everyone from every background is welcome to attend 
+                HackDecatur. As long as you bring an idea, we're happy to have you. But who are "we"?
+                </p>
+                <h2>The People</h2>
+                <p>HackDecatur has been organized by a small group of interesting people that truly want to better the Decatur community and business 
+                scene. They come from a variety of backgrounds. 
+                </p>
+                <h3>Team</h3>
+                <p>&lt;images of team&gt;</p>
+                <p>Select businesses have been targeted for the HackDecatur cause, purely to make the act of solving problems more focused. 
+                The selected businesses present a multitude of topics. 
+                </p>
+                <h3>Businesses</h3>
+                <p>&lt;logos of businesses&gt;</p>
+            </div>
+            <div id = "sidebar">
+            <h3>Links</h3>
+                <a href = "http://www.eventbrite.com">Register</a>
+                <a href = "mailto:hackdecatur@gmail.com">Contact</a>
+            </div>
+        </div>
+        <div id = "info">
+            <h1>April 12-13, 2014</h1>
+            <div id="map"></div>
+            <h2>Decatur Recreation Center</h2>
+            <p>231 Sycamore Street, Decatur GA 30030</p>
+        </div>
+        <p class = "copy">&copy; <a href = "http://touchred.github.io">Connor Trotter</a> 2014</p>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
