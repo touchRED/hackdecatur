@@ -1,0 +1,18 @@
+{
+  "JV Boys" : [ {
+    "enemy" : "Pius",
+    "score" : "100-0"
+  } ],
+  "1" : {
+    "title" : "Herp",
+    "content" : "Herp herp"
+  },
+  "0" : {
+    "comments" : [ {
+      "content" : "I disagree",
+      "commenter" : "Connor"
+    } ],
+    "title" : "Derp",
+    "content" : "Derp derp"
+  }
+}
