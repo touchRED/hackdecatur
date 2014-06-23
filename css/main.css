@@ -217,7 +217,10 @@ a:hover{
     margin-top:0;
     padding-bottom:0;
 }
-
+#member{
+	width:50%;
+	float:left;
+}
 
 
 
