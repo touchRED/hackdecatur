@@ -100,11 +100,7 @@ textarea {
 body{
     margin: 0 auto;
     padding: 0;
-<<<<<<< HEAD
     background-image: url(http://touchred.github.io/hackdecatur/img/stardust/stardust.png);
-=======
-    background-image: url(http://furblesmith.kd.io/hackdecatur/img/stardust/stardust.png);
->>>>>>> master
     color: #ddd;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -221,14 +217,10 @@ a:hover{
     margin-top:0;
     padding-bottom:0;
 }
-<<<<<<< HEAD
 #member{
 	width:50%;
 	float:left;
 }
-=======
-
->>>>>>> master
 
 
 
